@@ -11,13 +11,6 @@ const flash = require("connect-flash")
 // activating express
 const app = express();
 
-// requiring .env file
-require("dotenv").config();
-
-//mongo connection
-const connectDB = require("./server/database/database.js");
-const { route } = require("./server/routes/index");
-connectDB();
 
 // body-parser middleware
 app.use(express.json())
