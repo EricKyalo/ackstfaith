@@ -54,21 +54,7 @@ app.use(express.static(path.join(__dirname, "public")))
 // index router home page
 app.use("/", require("./server/routes/index"));
 
-// sermon router
-app.use("/", require("./server/routes/sermon"));
 
-// new Sermon router
-app.use("/", require("./server/routes/sermonCreate"));
-
-
-// blog show router
-app.use("/", require("./server/routes/show"));
-
-// search router
-app.use("/", require("./server/routes/search"));
-
-// admin route
-app.use("/", require("./server/routes/admin"))
 
 const port = process.env.PORT || 5000;
 
